@@ -1,0 +1,534 @@
+ip4 that has a source host of foo
+
+0
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host]  |  host  |  dobj  |  NOUN  |  has
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+             ip4_PROTO                  
+                 |                       
+              has_VBZ                   
+    _____________|_________              
+   |                    host_TYP        
+   |      _________________|________     
+   |     |                 |      of_IN 
+   |     |                 |        |    
+that_DT a_DT           source_DIR foo_NN
+
+
+ip4 with a source host of foo
+
+0
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host]  |  host  |  pobj  |  NOUN  |  with
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+     ip4_PROTO        
+         |             
+      with_IN         
+         |             
+      host_TYP        
+  _______|________     
+ |       |      of_IN 
+ |       |        |    
+a_DT source_DIR foo_NN
+
+
+ip4 with source host foo
+
+0
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host, foo]  |  foo  |  pobj  |  NOUN  |  with
+           ip4_PROTO         
+               |              
+            with_IN          
+               |              
+             foo_NN          
+     __________|________      
+source_DIR           host_TYP
+
+
+ip4 with foo as the source host
+
+0
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[foo]  |  foo  |  pobj  |  NOUN  |  with
+[source, host]  |  host  |  pobj  |  NOUN  |  as
+       ip4_PROTO           
+           |                
+        with_IN            
+           |                
+         foo_NN            
+           |                
+         as_IN             
+           |                
+        host_TYP           
+   ________|_________       
+the_DT           source_DIR
+
+
+ip4 where the source host is foo
+
+0
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host]  |  host  |  nsubj  |  NOUN  |  is
+[foo]  |  foo  |  attr  |  NOUN  |  is
+          ip4_PROTO                           
+              |                                
+            is_VBZ                            
+     _________|_______________                 
+    |         |            host_TYP           
+    |         |        _______|_________       
+where_WRB   foo_NN  the_DT          source_DIR
+
+
+ip4 that does not have a source host of foo
+
+1
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host]  |  host  |  dobj  |  NOUN  |  have
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+                  ip4_PROTO                       
+                      |                            
+                   have_VB                        
+    __________________|______________              
+   |        |         |           host_TYP        
+   |        |         |       _______|________     
+   |        |         |      |       |      of_IN 
+   |        |         |      |       |        |    
+that_WDT does_VBZ   not_RB  a_DT source_DIR foo_NN
+
+
+ip4 that doesn't have a source host of foo
+
+1
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host]  |  host  |  dobj  |  NOUN  |  have
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+                 ip4_PROTO                       
+                     |                            
+                  have_VB                        
+    _________________|______________              
+   |       |         |           host_TYP        
+   |       |         |       _______|________     
+   |       |         |      |       |      of_IN 
+   |       |         |      |       |        |    
+that_DT does_VBZ   n't_RB  a_DT source_DIR foo_NN
+
+
+not ip4 that has a source host of foo
+
+1
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host]  |  host  |  dobj  |  NOUN  |  has
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+               ip4_PROTO                          
+   ________________|________                       
+  |                      has_VBZ                  
+  |        _________________|________              
+  |       |                       host_TYP        
+  |       |         _________________|________     
+  |       |        |                 |      of_IN 
+  |       |        |                 |        |    
+not_RB that_DT    a_DT           source_DIR foo_NN
+
+
+ip4 without a source host of foo
+
+1
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host]  |  host  |  pobj  |  NOUN  |  without
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+     ip4_PROTO        
+         |             
+     without_IN       
+         |             
+      host_TYP        
+  _______|________     
+ |       |      of_IN 
+ |       |        |    
+a_DT source_DIR foo_NN
+
+
+ip4 not with source host foo
+
+1
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host, foo]  |  foo  |  pobj  |  NOUN  |  with
+       ip4_PROTO                 
+           |                      
+        with_IN                  
+   ________|________              
+  |               foo_NN         
+  |         ________|_______      
+not_RB source_DIR        host_TYP
+
+
+ip4 without foo as the source host
+
+1
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[foo]  |  foo  |  pobj  |  NOUN  |  without
+[source, host]  |  host  |  pobj  |  NOUN  |  as
+       ip4_PROTO            
+           |                 
+       without_IN           
+           |                 
+         foo_NN             
+           |                 
+         as_IN              
+           |                 
+        host_TYP            
+   ________|__________       
+the_DT            source_DIR
+
+
+ip4 where the source host is not foo
+
+1
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host]  |  host  |  nsubj  |  NOUN  |  is
+[foo]  |  foo  |  attr  |  NOUN  |  is
+                 ip4_PROTO                           
+                     |                                
+                   is_VBZ                            
+     ________________|_______________                 
+    |       |        |            host_TYP           
+    |       |        |        _______|_________       
+where_WRB not_RB   foo_NN  the_DT          source_DIR
+
+
+ip4 with source host foo as the source host
+
+0
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host, foo]  |  foo  |  pobj  |  NOUN  |  with
+[source, host]  |  host  |  pobj  |  NOUN  |  as
+           ip4_PROTO                           
+               |                                
+            with_IN                            
+               |                                
+             foo_NN                            
+     __________|_______________                 
+    |          |             as_IN             
+    |          |               |                
+    |          |            host_TYP           
+    |          |        _______|_________       
+source_DIR  host_TYP the_DT          source_DIR
+
+
+it is ip4 with a source host of foo
+
+0
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host]  |  host  |  pobj  |  NOUN  |  with
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+              ip4_PROTO                  
+   _______________|_________              
+  |      |               with_IN         
+  |      |                  |             
+  |      |               host_TYP        
+  |      |         _________|________     
+  |      |        |         |      of_IN 
+  |      |        |         |        |    
+it_PRP is_VBZ    a_DT   source_DIR foo_NN
+
+
+the packet is ip4 with a source host of foo
+
+0
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host]  |  host  |  pobj  |  NOUN  |  with
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+                 ip4_PROTO                  
+   __________________|_________              
+  |        |                with_IN         
+  |        |                   |             
+  |        |                host_TYP        
+  |        |          _________|________     
+  |    packet_NN     |         |      of_IN 
+  |        |         |         |        |    
+is_VBZ   the_DT     a_DT   source_DIR foo_NN
+
+
+it is an ip4 packet with a source host of foo
+
+0
+
+[ip4, packet]  |  packet  |  attr  |  NOUN  |  is
+[source, host]  |  host  |  pobj  |  NOUN  |  with
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+               is_VBZ                             
+   ______________|_________                        
+  |                    packet_NN                  
+  |       _________________|_________              
+  |      |       |                with_IN         
+  |      |       |                   |             
+  |      |       |                host_TYP        
+  |      |       |          _________|________     
+  |      |       |         |         |      of_IN 
+  |      |       |         |         |        |    
+it_PRP an_DT ip4_PROTO    a_DT   source_DIR foo_NN
+
+
+ip4 without source host foo as the source host
+
+1
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host, foo]  |  foo  |  pobj  |  NOUN  |  without
+[source, host]  |  host  |  pobj  |  NOUN  |  as
+           ip4_PROTO                            
+               |                                 
+           without_IN                           
+               |                                 
+             foo_NN                             
+     __________|________________                 
+    |          |              as_IN             
+    |          |                |                
+    |          |             host_TYP           
+    |          |         _______|_________       
+source_DIR  host_TYP  the_DT          source_DIR
+
+
+it is not ip4 with a source host of foo
+
+1
+
+[ip4]  |  ip4  |  acomp  |  NOUN  |  is
+[source, host]  |  host  |  pobj  |  NOUN  |  with
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+                is_VBZ                        
+   _______________|______________              
+  |      |        |           with_IN         
+  |      |        |              |             
+  |      |        |           host_TYP        
+  |      |        |       _______|________     
+  |      |        |      |       |      of_IN 
+  |      |        |      |       |        |    
+it_PRP not_RB ip4_PROTO a_DT source_DIR foo_NN
+
+
+it is ip4 without a source host of foo
+
+1
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host]  |  host  |  pobj  |  NOUN  |  without
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+              ip4_PROTO                  
+   _______________|_________              
+  |      |              without_IN       
+  |      |                  |             
+  |      |               host_TYP        
+  |      |         _________|________     
+  |      |        |         |      of_IN 
+  |      |        |         |        |    
+it_PRP is_VBZ    a_DT   source_DIR foo_NN
+
+
+the packet is not ip4 with a source host of foo
+
+1
+
+[packet]  |  packet  |  nsubj  |  NOUN  |  is
+[source, host]  |  host  |  pobj  |  NOUN  |  with
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+                   is_VBZ                        
+   __________________|______________              
+  |        |         |           with_IN         
+  |        |         |              |             
+  |        |         |           host_TYP        
+  |        |         |       _______|________     
+  |        |     packet_NN  |       |      of_IN 
+  |        |         |      |       |        |    
+not_RB ip4_PROTO   the_DT  a_DT source_DIR foo_NN
+
+
+the packet is ip4 without a source host of foo
+
+1
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, host]  |  host  |  pobj  |  NOUN  |  without
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+                 ip4_PROTO                  
+   __________________|_________              
+  |        |               without_IN       
+  |        |                   |             
+  |        |                host_TYP        
+  |        |          _________|________     
+  |    packet_NN     |         |      of_IN 
+  |        |         |         |        |    
+is_VBZ   the_DT     a_DT   source_DIR foo_NN
+
+
+it is not an ip4 packet with a source host of foo
+
+1
+
+[ip4, packet]  |  packet  |  attr  |  NOUN  |  is
+[source, host]  |  host  |  pobj  |  NOUN  |  with
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+                      is_VBZ                             
+   _____________________|_________                        
+  |      |                    packet_NN                  
+  |      |       _________________|_________              
+  |      |      |       |                with_IN         
+  |      |      |       |                   |             
+  |      |      |       |                host_TYP        
+  |      |      |       |          _________|________     
+  |      |      |       |         |         |      of_IN 
+  |      |      |       |         |         |        |    
+it_PRP not_RB an_DT ip4_PROTO    a_DT   source_DIR foo_NN
+
+
+it is an ip4 packet without a source host of foo
+
+1
+
+[ip4, packet]  |  packet  |  attr  |  NOUN  |  is
+[source, host]  |  host  |  pobj  |  NOUN  |  without
+[foo]  |  foo  |  pobj  |  NOUN  |  of
+               is_VBZ                             
+   ______________|_________                        
+  |                    packet_NN                  
+  |       _________________|_________              
+  |      |       |               without_IN       
+  |      |       |                   |             
+  |      |       |                host_TYP        
+  |      |       |          _________|________     
+  |      |       |         |         |      of_IN 
+  |      |       |         |         |        |    
+it_PRP an_DT ip4_PROTO    a_DT   source_DIR foo_NN
+
+
+ip4 that has direction source and type host and value foo
+
+0
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[direction, source]  |  source  |  dobj  |  NOUN  |  has
+[type, host]  |  host  |  nmod  |  NOUN  |  foo
+[value, foo]  |  foo  |  conj  |  NOUN  |  source
+                     ip4_PROTO                             
+                         |                                  
+                      has_VBZ                              
+    _____________________|_________                         
+   |                           source_DIR                  
+   |          _____________________|_________               
+   |         |           |                 foo_NN          
+   |         |           |                   |              
+   |         |           |                host_TYP         
+   |         |           |          _________|________      
+that_DT direction_NN   and_CC   type_NN    and_CC  value_NN
+
+
+ip4 that has source or destination host foo
+
+0
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, or, destination, host, foo]  |  foo  |  conj  |  NOUN  |  source
+         ip4_PROTO                           
+             |                                
+          has_VBZ                            
+    _________|_________                       
+   |               source_DIR                
+   |          _________|_____________         
+   |         |                     foo_NN    
+   |         |                       |        
+   |         |                    host_TYP   
+   |         |                       |        
+that_WDT   or_CC              destination_DIR
+
+
+ip4 that has source and destination host foo
+
+0
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, and, destination, host, foo]  |  foo  |  conj  |  NOUN  |  source
+         ip4_PROTO                           
+             |                                
+          has_VBZ                            
+    _________|_________                       
+   |               source_DIR                
+   |          _________|_____________         
+   |         |                     foo_NN    
+   |         |                       |        
+   |         |                    host_TYP   
+   |         |                       |        
+that_WDT   and_CC             destination_DIR
+
+
+ip4 that does not have direction source and type host and value foo
+
+1
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[direction, source]  |  source  |  dobj  |  NOUN  |  have
+[type, host]  |  host  |  nmod  |  NOUN  |  foo
+[value, foo]  |  foo  |  conj  |  NOUN  |  source
+                          ip4_PROTO                                      
+                              |                                           
+                           have_VB                                       
+    __________________________|__________________                         
+   |        |       |                        source_DIR                  
+   |        |       |          __________________|_________               
+   |        |       |         |         |                foo_NN          
+   |        |       |         |         |                  |              
+   |        |       |         |         |               host_TYP         
+   |        |       |         |         |         _________|________      
+that_WDT does_VBZ not_RB direction_NN and_CC  type_NN    and_CC  value_NN
+
+
+ip4 that does not have source or destination host foo
+
+1
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, or, destination, host, foo]  |  foo  |  conj  |  NOUN  |  source
+                  ip4_PROTO                                 
+                      |                                      
+                   have_VB                                  
+    __________________|_______________                       
+   |        |         |           source_DIR                
+   |        |         |        _______|_____________         
+   |        |         |       |                   foo_NN    
+   |        |         |       |                     |        
+   |        |         |       |                  host_TYP   
+   |        |         |       |                     |        
+that_WDT does_VBZ   not_RB  or_CC            destination_DIR
+
+
+ip4 that does not have source and destination host foo
+
+1
+
+[ip4]  |  ip4  |  ROOT  |  NOUN  |  ip4
+[source, and, destination, host, foo]  |  foo  |  conj  |  NOUN  |  source
+                  ip4_PROTO                                  
+                      |                                       
+                   have_VB                                   
+    __________________|________________                       
+   |        |         |            source_DIR                
+   |        |         |        ________|_____________         
+   |        |         |       |                    foo_NN    
+   |        |         |       |                      |        
+   |        |         |       |                   host_TYP   
+   |        |         |       |                      |        
+that_WDT does_VBZ   not_RB  and_CC            destination_DIR

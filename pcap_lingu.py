@@ -523,7 +523,7 @@ sentences_with_conjs = [
 ]
 
 
-for txt in sentences + sentences_with_conjs + sentences_with_proto:
+for txt in sentences + advanced_sentences + sentences_with_conjs:
     doc = nlp(txt)
     print_doc(doc)
     # print_noun_chunks(doc)
